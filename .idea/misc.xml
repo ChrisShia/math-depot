@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="GOLAND_PROPERTIES" value="$USER_HOME$/Practise-code/Practise-go/GoLand/config/GoLand2023.2-config" />
+    </envs>
+  </component>
+</project>
