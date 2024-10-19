@@ -1,3 +1,3 @@
-module github.com/maths
+module github.com/math-depot
 
 go 1.21
