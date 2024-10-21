@@ -36,6 +36,7 @@ func Test_CounterModulo(t *testing.T) {
 	}{
 		{"Start from -2 advance 5 times mod 3", 5, -2, 3, 0},
 		{"Start from 100 advance 5 times mod 3", 5, 100, 3, 102},
+		{"Start from 0 advance 4 times mod 3", 4, 0, 3, 0},
 	}
 	for _, tt := range tests {
 		counter := NewModCounter(tt.start, tt.modulo)
@@ -60,6 +61,8 @@ func Test_CounterModuloWithOffset(t *testing.T) {
 		offset   int
 		expected int
 	}{
+		{"Start from 0 offset 1 advance 0 times mod 3", 0, 0, 3, 1, 1},
+		{"Start from 0 offset 7 advance 0 times mod 3", 0, -4, 3, 7, -3},
 		{"Start from -2 offset 2 advance 5 times mod 3", 5, -2, 3, 2, -1},
 		{"Start from 100 offset 4 advance 5 times mod 3", 5, 100, 3, 4, 100},
 	}
